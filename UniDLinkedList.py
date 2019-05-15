@@ -89,7 +89,13 @@ class LinkedList():
         
     def reverse(self):       
         p = self.head
-            
+        q = None
+        while p is not None:
+            r = q
+            q = p
+            p = p.nextNode
+            q.nextNode = r
+        self.head = q
     
     def disaplay(self):
         ptr = self.head
@@ -110,6 +116,7 @@ if __name__ == '__main__':
     l1.append(s1)
     l1.append(s2)
     l1.append(s3)
-    l1.insert(s4, 2)
+    l1.append(s4)
+    l1.reverse()
     l1.disaplay()
     print(l1)
