@@ -24,7 +24,6 @@ void Push(arraystack S, ELementType item)
         S->Data[++(S->Top)] = item;
         return;
     }
-    
 }
 
 ELementType Pop(arraystack S)
@@ -38,3 +37,6 @@ ELementType Pop(arraystack S)
         return S->Data[(S->Top)--];
 }
 ```
+### 用一个数组实现两个堆栈
+只要数组还存在空间就可以入栈，最大化利用数组空间。  
+【分析】使两个栈分别从数组的两边开始向中间生长，当两个栈的栈顶指针相遇时，表示两个栈都满了。  
