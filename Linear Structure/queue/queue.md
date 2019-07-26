@@ -7,4 +7,12 @@
 Queue CreateQueue(int MAXSIZE) //生成长度为MAXSIZE的空队列
 ```
 ## 队列的顺序存储实现
-队列的顺序存储结构通常由一个*一维数组*和一个记录队列头元素位置的变量*front*以及一个记录队尾元素位置的变量*rear*组成。
+队列的顺序存储结构通常由一个**一维数组**和一个记录队列头元素位置的变量**front**以及一个记录队尾元素位置的变量**rear**组成。
+```c
+#define MAXSIZE <储存数据元素的最大个数>
+typedef struct{
+    ElementType Data[MAXSIZE];
+    int front;
+    int rear;
+}QNode, *Queue;
+```
