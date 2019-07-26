@@ -10,33 +10,7 @@ struct SNode{
     int Top;
 };
 ```
-### 堆栈函数Push、Pop的实现
-```c
-void Push(arraystack S, ELementType item)
-{
-    if( S->Top == MAXSIZE - 1)
-    {
-        printf("Stack is full!\n");
-        return;
-    }
-    else
-    {
-        S->Data[++(S->Top)] = item;
-        return;
-    }
-}
-
-ELementType Pop(arraystack S)
-{
-    if( S->Top == -1 )
-    {
-        printf("Stack is empty!\n");
-        return ERROR;
-    }
-    else
-        return S->Data[(S->Top)--];
-}
-```
+#### [堆栈函数Push、Pop](arraystack.c)
 ### 用一个数组实现两个堆栈
 只要数组还存在空间就可以入栈，最大化利用数组空间。  
 【分析】使两个栈分别从数组的两边开始向中间生长，当两个栈的栈顶指针相遇时，表示两个栈都满了。  
@@ -62,51 +36,4 @@ struct lSNode
     linkstack Next;
 };
 ```
-### 相关函数实现
-```c
-#include <stdio.h>
-#include <stdlib.h>
-#include "linkstack.h"
-
-linkstack CreateStack()
-{
-    linkstack S;
-    S = (linkstack)malloc(sizeof(struct lSNode));
-    S->Next = NULL;
-    return S;
-}
-
-int IsEmpty(linkstack S)
-{
-    return ( S->Next == NULL );
-}
-
-void Push(linkstack S, ELementType item)
-{
-    linkstack temp;
-    temp = (linkstack)malloc(sizeof(struct lSNode));
-    temp->Data = item;
-    temp->Next = S->Next;
-    S->Next = temp;
-}
-
-ELementType Pop(linkstack S)
-{
-    ELementType TopItem;
-    if(IsEmpty(S))
-    {
-        printf("Stack is empty!\n");
-        return ERROR;
-    }
-    else
-    {
-        linkstack temp;
-        temp = S->Next;
-        S->Next = temp->Next;
-        TopItem = temp->Data;
-        free(temp);
-        temp = NULL;
-        return TopItem;
-    }
-}
-```
+#### [相关函数](./linkstack.c)
