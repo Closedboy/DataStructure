@@ -1,4 +1,3 @@
-```c
 #include <stdio.h>
 #include <stdlib.h>
 #include "linkstack.h"
@@ -44,4 +43,3 @@ ELementType Pop(linkstack S)
         return TopItem;
     }
 }
-```
