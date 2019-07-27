@@ -33,18 +33,17 @@ typedef struct{
 队列的链式存储结构也可以用一个单链表实现。插入和删除操作分别在链表的两头进行；队列指针front应该指向链表的头，rear指向链表的尾。
 ```c
 typedef int ElementType;
-typedef Node *List;
-typedef QNode *linkqueue;
+typedef struct Node *List;
 struct Node
 {
     ElementType Data;
     List Next;
 };
-struct QNode
+typedef struct
 {
     List front;
     List rear; 
-};
+}QNode, *linkqueue;
 ```
 [链式存储函数实现](./linkqueue.c)  
 ***注意front和rear的意义***
