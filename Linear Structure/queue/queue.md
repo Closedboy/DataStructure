@@ -5,6 +5,10 @@
 操作集：长度为MAXSIZE的队列Q，队列元素item
 ```c
 Queue CreateQueue(int MAXSIZE) //生成长度为MAXSIZE的空队列
+int IsFull(Queue Q, int MAXSIZE) //判断队列Q是否已满
+void Enqueue(Queue Q, ElementType item) //将数据item插入队列Q中
+int IsEmpty(Queue Q) //判断队列Q是否为空
+ElementType Dequeue(Queue Q) //将队头数据 元素从队列中删除并返回
 ```
 ## 队列的顺序存储实现
 队列的顺序存储结构通常由一个***一维数组***和一个记录队列头元素位置的变量***front***以及一个记录队尾元素位置的变量***rear***组成。
