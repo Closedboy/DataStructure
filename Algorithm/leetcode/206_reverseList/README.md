@@ -7,5 +7,5 @@
 
 输出: 5->4->3->2->1->NULL
 
-- [递归](./reverseListRc.c)
-- [迭代](./reverseList.c)
+- [方法一：递归](./reverseListRc.c)
+- [方法二：迭代](./reverseList.c)
