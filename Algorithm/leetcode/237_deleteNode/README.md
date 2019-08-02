@@ -4,6 +4,9 @@
 现有一个链表 -- head = [4,5,1,9]，它可以表示为:
 
 ![avatar](./237_example.png)
+<center>
+<img src="./237_example.png">
+</center>
 
 **示例 1:**
 
