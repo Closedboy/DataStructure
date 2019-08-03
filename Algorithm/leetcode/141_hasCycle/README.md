@@ -11,8 +11,8 @@
 
 解释：链表中有一个环，其尾部连接到第二个节点。
 
-<div>
-<imag src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png">
+<div align="center">
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png">
 </div>
 
 **示例 2：**
