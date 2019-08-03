@@ -8,7 +8,8 @@ struct ListNode* deleteDuplicates(struct ListNode* head){
             uniq = p;
         }
         p = p->next;
-        uniq->next = NULL;
     }
+    if(uniq)
+        uniq->next = NULL;
     return head;
 }
