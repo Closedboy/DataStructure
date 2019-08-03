@@ -21,9 +21,17 @@
 输出：true
 解释：链表中有一个环，其尾部连接到第一个节点。
 
+<div align="center">
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png">
+</div>
+
 
 **示例 3：**
 
 输入：head = [1], pos = -1
 输出：false
 解释：链表中没有环。
+
+<div align="center">
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png">
+</div>
