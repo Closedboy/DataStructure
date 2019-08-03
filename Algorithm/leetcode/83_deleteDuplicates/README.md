@@ -13,4 +13,5 @@
 
 输出: 1->2->3
 
-- [Code](./deleteDuplicates.c)
+- [方法一：直接法](./deleteDuplicates.c)
+- [方法二：递归法](./deleteDuplicatesRc.c)
