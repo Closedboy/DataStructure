@@ -31,5 +31,11 @@ n个节点构成的有限集合。当**n=0**时，称为空树。对任意非空
 数组不可行，用链表表示。
 
 <div align="center">
-<img src="./tree_01.png">
+<img src="./Tree_01.png">
+</div>
+
+儿子-兄弟表示法
+
+<div align="center">
+<img src="./Tree_02.png">
 </div>
